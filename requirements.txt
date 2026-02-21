@@ -1,0 +1,10 @@
+requests>=2.31.0
+google-generativeai>=0.7.0
+schedule>=1.2.0
+discord-webhook>=1.3.0
+python-dotenv>=1.0.0
+feedparser>=6.0.0           # podcast RSS parsing
+beautifulsoup4>=4.12.0      # article/reddit scraping
+openai>=1.30.0              # Whisper audio transcription
+praw>=7.7.0                 # Reddit API
+lxml>=5.0.0                 # fast HTML parser for BS4
