@@ -1,7 +1,7 @@
-# MIDAS
-### Media Ingestion, Distillation & Agentic Summary System
+# HERMES
+### Hybrid Extraction & Relay for Media, Enrichment & Summary
 
-MIDAS is a fully agentic, plug-and-play media intelligence pipeline.
+HERMES is a fully agentic, plug-and-play media intelligence pipeline.
 It ingests content from any source, distils it with AI, and broadcasts
 highlights to Discord — automatically, every day.
 
@@ -44,7 +44,7 @@ highlights to Discord — automatically, every day.
 ## Directory Structure
 
 ```
-MIDAS/
+HERMES /
 ├── main.py                        ← entry point
 ├── orchestrator.py                ← wires all agents + env config
 ├── requirements.txt
