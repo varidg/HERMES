@@ -1,7 +1,7 @@
 """
 main.py
 -------
-MIDAS entry point.
+HERMES entry point.
 
 Usage:
     python main.py          # waits for scheduled time
@@ -25,7 +25,7 @@ def main() -> None:
         while True:
             time.sleep(60)
     except KeyboardInterrupt:
-        log.info("MIDAS shutting down. Goodbye.")
+        log.info("HERMES shutting down. Goodbye.")
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ from models.media_type import MediaType
 from extractors.base_extractor import BaseExtractor
 
 HEADERS = {
-    "User-Agent": "MIDAS/1.0 (Media Intelligence Pipeline; content research bot)"
+    "User-Agent": "HERMES/1.0 (Media Intelligence Pipeline; content research bot)"
 }
 
 

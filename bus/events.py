@@ -1,7 +1,7 @@
 """
 bus/events.py
 -------------
-All event name constants used across the MIDAS pipeline.
+All event name constants used across the HERMES pipeline.
 Using constants prevents typos and makes the event graph easy to audit.
 
 Event flow:
@@ -18,7 +18,7 @@ class Events:
     # ── Lifecycle ──────────────────────────────────────────────────────────────
     PIPELINE_TRIGGER   = "pipeline.trigger"      # SchedulerAgent fires this
     PIPELINE_COMPLETE  = "pipeline.complete"      # NotifierAgent fires this
-    PIPELINE_ERROR     = "pipeline.error"         # any agent fires on failure
+    PIPELINE_ERROR     = "pipeline.error"         # any agents fires on failure
 
     # ── Source stage ──────────────────────────────────────────────────────────
     SOURCE_READY       = "source.ready"           # SourceRouterAgent fires this

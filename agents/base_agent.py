@@ -1,7 +1,7 @@
 """
 agents/base_agent.py
 --------------------
-Abstract base class every MIDAS agent must inherit from.
+Abstract base class every HERMES agents must inherit from.
 Handles auto-subscription and safe error wrapping.
 """
 
@@ -32,7 +32,7 @@ class BaseAgent(ABC):
         except Exception as exc:
             self.log.error(f"Error in {self.name}: {exc}", exc_info=True)
             self.bus.publish(Events.PIPELINE_ERROR, {
-                "agent": self.name,
+                "agents": self.name,
                 "error": str(exc),
                 "payload": payload,
             })

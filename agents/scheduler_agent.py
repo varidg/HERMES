@@ -28,7 +28,7 @@ class SchedulerAgent(BaseAgent):
         self.active_sources = active_sources
 
     def handle(self, payload: dict) -> None:
-        pass  # source agent — no inbound events
+        pass  # source agents — no inbound events
 
     def _fire(self) -> None:
         self.log.info(f"Trigger fired at {datetime.now().strftime('%H:%M:%S')} for {len(self.active_sources)} source(s)")

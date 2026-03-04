@@ -33,11 +33,11 @@ class NotifierAgent(BaseAgent):
     def handle(self, payload: dict) -> None:
         # Pipeline error path
         if Events.PIPELINE_ERROR in str(payload.get("_event", "")) or "error" in payload:
-            agent = payload.get("agent", "unknown")
+            agent = payload.get("agents", "unknown")
             error = payload.get("error", "unknown error")
             self.log.error(f"Pipeline error reported by '{agent}': {error}")
             # Notify Discord about the failure too
-            error_msg = f"[MIDAS ERROR] Pipeline failed in {agent}: {error}"
+            error_msg = f"[HERMES ERROR] Pipeline failed in {agent}: {error}"
             for notifier in self.notifiers:
                 try:
                     notifier.send(error_msg)

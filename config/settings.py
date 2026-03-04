@@ -45,7 +45,7 @@ class Settings:
     # ── Reddit ─────────────────────────────────────────────────────────────────
     REDDIT_CLIENT_ID:     str = _optional("REDDIT_CLIENT_ID")
     REDDIT_CLIENT_SECRET: str = _optional("REDDIT_CLIENT_SECRET")
-    REDDIT_USER_AGENT:    str = _optional("REDDIT_USER_AGENT", "MIDAS/1.0")
+    REDDIT_USER_AGENT:    str = _optional("REDDIT_USER_AGENT", "HERMES/1.0")
     REDDIT_SUBREDDIT:     str = _optional("REDDIT_SUBREDDIT", "technology")
 
     # ── Podcast ────────────────────────────────────────────────────────────────

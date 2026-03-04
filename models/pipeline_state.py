@@ -2,7 +2,7 @@
 models/pipeline_state.py
 ------------------------
 The shared state dataclass that flows through the entire pipeline.
-Each agent receives it, enriches its relevant fields, and passes it on.
+Each agents receives it, enriches its relevant fields, and passes it on.
 """
 
 from dataclasses import dataclass, field

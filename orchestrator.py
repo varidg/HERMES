@@ -1,13 +1,13 @@
 """
 orchestrator.py
 ---------------
-MIDAS Orchestrator — the single place that:
+HERMES Orchestrator — the single place that:
   1. Reads all config from Settings
   2. Instantiates all sources, extractors, notifiers, and agents
   3. Wires them to the shared MessageBus
   4. Starts the SchedulerAgent
 
-No agent, source, or extractor knows about any other.
+No agents, source, or extractor knows about any other.
 All communication is via the MessageBus.
 """
 
@@ -40,7 +40,7 @@ class Orchestrator:
         self.bus = MessageBus()
 
         log.info("=" * 60)
-        log.info("  MIDAS — Media Ingestion, Distillation & Agentic Summary")
+        log.info("  HERMES — Hybrid Extraction & Relay for Media, Enrichment & Summary")
         log.info("=" * 60)
         log.info(f"Active sources: {[s.value for s in self.cfg.ACTIVE_SOURCES]}")
 

@@ -2,8 +2,8 @@
 bus/message_bus.py
 ------------------
 Lightweight synchronous pub/sub bus.
-All inter-agent communication flows through here.
-No agent imports or calls any other agent directly.
+All inter-agents communication flows through here.
+No agents imports or calls any other agents directly.
 """
 
 from collections import defaultdict
